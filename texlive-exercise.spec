@@ -1,3 +1,9 @@
+# revision 23328
+# category Package
+# catalog-ctan /macros/latex/contrib/exercise
+# catalog-date 2011-07-19 17:40:51 +0200
+# catalog-license gpl
+# catalog-version 1.57
 Name:		texlive-exercise
 Version:	1.57
 Release:	1
@@ -50,6 +56,7 @@ English and French are implemented).
 #- source
 %doc %{_texmfdistdir}/source/latex/exercise/exercise.dtx
 %doc %{_texmfdistdir}/source/latex/exercise/exercise.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -60,3 +67,5 @@ English and French are implemented).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
