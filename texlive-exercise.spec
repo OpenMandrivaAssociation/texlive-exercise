@@ -1,12 +1,12 @@
-# revision 23328
+# revision 26260
 # category Package
 # catalog-ctan /macros/latex/contrib/exercise
-# catalog-date 2011-07-19 17:40:51 +0200
+# catalog-date 2012-05-08 15:13:49 +0200
 # catalog-license gpl
-# catalog-version 1.57
+# catalog-version 1.58
 Name:		texlive-exercise
-Version:	1.57
-Release:	2
+Version:	1.58
+Release:	1
 Summary:	Typeset exercises, problems, etc. and their answers
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/exercise
