@@ -56,3 +56,21 @@ English and French are implemented).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Mon Jun 11 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.58-1
++ Revision: 804574
+- Update to latest release.
+
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.57-2
++ Revision: 751680
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.57-1
++ Revision: 718398
+- texlive-exercise
+- texlive-exercise
+- texlive-exercise
+- texlive-exercise
+
