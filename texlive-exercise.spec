@@ -6,7 +6,7 @@
 # catalog-version 1.58
 Name:		texlive-exercise
 Version:	1.58
-Release:	4
+Release:	5
 Summary:	Typeset exercises, problems, etc. and their answers
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/exercise
