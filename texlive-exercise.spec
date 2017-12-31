@@ -1,9 +1,3 @@
-# revision 26260
-# category Package
-# catalog-ctan /macros/latex/contrib/exercise
-# catalog-date 2012-05-08 15:13:49 +0200
-# catalog-license gpl
-# catalog-version 1.58
 Name:		texlive-exercise
 Version:	1.6
 Release:	1
@@ -40,12 +34,10 @@ English and French are implemented).
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/exercise/exercise.sty
-%doc %{_texmfdistdir}/doc/latex/exercise/README
-%doc %{_texmfdistdir}/doc/latex/exercise/exercise.pdf
+%{_texmfdistdir}/tex/latex/exercise
+%doc %{_texmfdistdir}/doc/latex/exercise
 #- source
-%doc %{_texmfdistdir}/source/latex/exercise/exercise.dtx
-%doc %{_texmfdistdir}/source/latex/exercise/exercise.ins
+%doc %{_texmfdistdir}/source/latex/exercise
 
 #-----------------------------------------------------------------------
 %prep
@@ -56,21 +48,3 @@ English and French are implemented).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Mon Jun 11 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.58-1
-+ Revision: 804574
-- Update to latest release.
-
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.57-2
-+ Revision: 751680
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.57-1
-+ Revision: 718398
-- texlive-exercise
-- texlive-exercise
-- texlive-exercise
-- texlive-exercise
-
