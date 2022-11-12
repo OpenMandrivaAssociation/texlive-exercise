@@ -1,13 +1,13 @@
 Name:		texlive-exercise
-Version:	1.6
-Release:	2
+Version:	35417
+Release:	1
 Summary:	Typeset exercises, problems, etc. and their answers
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/exercise
 License:	GPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/exercise.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/exercise.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/exercise.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/exercise.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/exercise.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/exercise.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -25,12 +25,12 @@ babel package is detected, but not fully supported yet (only
 English and French are implemented).
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -41,7 +41,8 @@ English and French are implemented).
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
