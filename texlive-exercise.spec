@@ -1,6 +1,6 @@
 Name:		texlive-exercise
 Version:	35417
-Release:	1
+Release:	2
 Summary:	Typeset exercises, problems, etc. and their answers
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/exercise
